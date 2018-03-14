@@ -50,23 +50,6 @@ public class Swipe : MonoBehaviour {
 			}
 		}
 
-		if (swipeDelta.magnitude > 100) {
-			if (Mathf.Abs (swipeDelta.x) > Mathf.Abs (swipeDelta.y)) {
-				if (swipeDelta.x < 0) {
-					swipeLeft = true;
-				} else {
-					swipeRight = true;
-				}
-			} else {
-				if (swipeDelta.y < 0) {
-					swipeDown = true;
-				} else {
-					swipeUp = true;
-				}
-			}
-
-			Reset ();
-		}
 	}
 
 	void Reset () {
@@ -76,9 +59,4 @@ public class Swipe : MonoBehaviour {
 
 	public Vector2 SwipeDelta { get { return swipeDelta; }}
 
-	public bool SwipeLeft { get { return swipeLeft; } }
-	public bool SwipeRight { get { return swipeRight; } }
-	public bool SwipeUp { get { return swipeUp; } }
-	public bool SwipeDown { get { return swipeDown; } }
-		
 }
