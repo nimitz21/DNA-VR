@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class Swipe : MonoBehaviour {
 
+	private static Swipe instance;
+	public static Swipe Instance {
+		get {
+			if (instance == null) {
+				instance = FindObjectOfType <Swipe> ();
+			}
+			return instance;
+		}
+	}
+
 	private bool tap;
-	private bool swipeLeft;
-	private bool swipeRight;
-	private bool swipeUp;
-	private bool swipeDown;
 	private bool isDragging;
 
 	private Vector2 startTouch;
 	private Vector2 swipeDelta;
 
 	void Update () {
-		tap = swipeLeft = swipeRight = swipeUp = swipeDown = false;
+		tap = false;
 
 		#region Mouse Inputs
 		if (Input.GetMouseButtonDown (0)) {
@@ -49,7 +55,7 @@ public class Swipe : MonoBehaviour {
 				swipeDelta = (Vector2)Input.mousePosition - startTouch;
 			}
 		}
-
+			
 	}
 
 	void Reset () {
@@ -57,6 +63,8 @@ public class Swipe : MonoBehaviour {
 		isDragging = false;
 	}
 
-	public Vector2 SwipeDelta { get { return swipeDelta; }}
+	public Vector2 SwipeDelta { get { return swipeDelta; } }
+
+	public bool Tap { get { return tap; } }
 
 }

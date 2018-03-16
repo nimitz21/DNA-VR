@@ -13,13 +13,12 @@ public class PanelSlider : MonoBehaviour {
 	private static float MOVE_DISTANCE = 1080;
 
 	[SerializeField]
-	private float SWIPE_THRESHOLD = 540;
+	[Range (0, 0.5f)]
+	private float SWIPE_THRESHOLD = 0.5f;
 	[SerializeField]
 	private float MOVE_SPEED = 1f;
 	[SerializeField]
 	private List <RectTransform> panelTransforms;
-	[SerializeField]
-	private Swipe swipeController;
 
 	private int moveDirection;
 	private float distanceMoved;
@@ -32,10 +31,10 @@ public class PanelSlider : MonoBehaviour {
 	}
 
 	void Update () {
-		//Debug.Log (swipeController.SwipeDelta.x);
+		//Debug.Log (Swipe.Instance.SwipeDelta.x);
 		if (moveDirection == Move.IDLE) {
-			if (swipeController.SwipeDelta.x < 0 && currentPosition < panelTransforms.Count - 1) {
-				distanceMoved = swipeController.SwipeDelta.x;
+			if (Swipe.Instance.SwipeDelta.x < 0 && currentPosition < panelTransforms.Count - 1) {
+				distanceMoved = Swipe.Instance.SwipeDelta.x;
 				transform.localPosition = Vector3.right * (-currentPosition * MOVE_DISTANCE + distanceMoved);
 
 				// Change transition panels alpha
@@ -43,8 +42,8 @@ public class PanelSlider : MonoBehaviour {
 				currentTransition.Right.color = new Color (1, 1, 1, distanceMoved / -MOVE_DISTANCE);
 				TransitionPanel nextTransition = panelTransforms [currentPosition + 1].GetComponent <TransitionPanel> ();
 				nextTransition.Left.color = new Color (1, 1, 1, 1 - distanceMoved / -MOVE_DISTANCE);
-			} else if (swipeController.SwipeDelta.x > 0 && currentPosition > 0) {
-				distanceMoved = swipeController.SwipeDelta.x;
+			} else if (Swipe.Instance.SwipeDelta.x > 0 && currentPosition > 0) {
+				distanceMoved = Swipe.Instance.SwipeDelta.x;
 				transform.localPosition = Vector3.right * (-currentPosition * MOVE_DISTANCE + distanceMoved);
 
 				// Change transition panels alpha
@@ -68,14 +67,6 @@ public class PanelSlider : MonoBehaviour {
 				}
 			}
 		}
-
-		// Detect Swipe
-		/*if (swipeController.SwipeLeft && currentPosition < panelTransforms.Count - 1) {
-			moveDirection = Move.LEFT;
-		}
-		if (swipeController.SwipeRight && currentPosition > 0) {
-			moveDirection = Move.RIGHT;
-		}*/
 	
 		if (moveDirection == Move.LEFT && distanceMoved > -MOVE_DISTANCE) {
 			// Move panels to left
