@@ -8,11 +8,11 @@ public class VrUi : MonoBehaviour {
 	[SerializeField]
 	private Transform nextObject;
 	[SerializeField]
-	private int nextObjectIndex = -1;
+	private int nextObjectIndex;
 	[SerializeField]
 	private Transform prevObject;
 	[SerializeField]
-	private int prevObjectIndex = -1;
+	private int prevObjectIndex;
 
 	public void Open () {
 		gameObject.SetActive (true);
