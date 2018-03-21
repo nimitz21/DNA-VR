@@ -18,4 +18,12 @@ public class VrUi : MonoBehaviour {
 		gameObject.SetActive (false);
 	}
 
+	public void PointToNextObject () {
+		Pointer.Instance.PointTo (nextObject.position);
+	}
+
+	public void PointToPrevObject () {
+		Pointer.Instance.PointTo (prevObject.position);
+	}
+
 }
