@@ -16,7 +16,6 @@ public class VrUi : MonoBehaviour {
 
 	public void Open () {
 		gameObject.SetActive (true);
-		Pointer.Instance.PointTo (Vector3.zero, Pointer.NULL);
 	}
 
 	public void Close () {

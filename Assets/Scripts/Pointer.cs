@@ -16,10 +16,18 @@ public class Pointer : MonoBehaviour {
 		
 	public const int NULL = -1;
 
+	[System.Serializable]
+	public class VrCanvas {
+		public int index;
+		public GameObject canvas;
+	}
+
 	[SerializeField]
 	private float MAGNITUDE_THRESHOLD = 0.75f;
 	[SerializeField]
 	private Transform cameraTransform;
+	[SerializeField]
+	private List<VrCanvas> vrCanvases;
 
 	private Transform arrowTransform;
 	private Vector3 destinationPosition;
@@ -56,8 +64,14 @@ public class Pointer : MonoBehaviour {
 	}
 
 	public void Enter (int objectIndex) {
+		foreach (VrCanvas vrCanvas in vrCanvases) {
+			if (vrCanvas.index != objectIndex) {
+				vrCanvas.canvas.SetActive (false);
+			}
+		}
 		if (objectIndex == destinationIndex) {
 			arrowTransform.gameObject.SetActive (false);
+			destinationIndex = NULL;
 		}
 	}
 
