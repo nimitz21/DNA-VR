@@ -21,14 +21,23 @@ public class Bumper : MonoBehaviour {
 	}
 
 	void Update () {
-		if (image.color.a < 1f) {
-			image.color = new Color (255, 255, 255, image.color.a + TRANSITION_SPEED * Time.deltaTime);
-		} else {
-			timeElapsed += Time.deltaTime;
-			if (timeElapsed >= LENGTH) {
-				gameObject.SetActive (false);
-				mainMenu.SetActive (true);
+		if (SceneController.Instance.isJustLaunched) {
+			if (image.color.a < 1f) {
+				image.color = new Color (255, 255, 255, image.color.a + TRANSITION_SPEED * Time.deltaTime);
+			} else {
+				timeElapsed += Time.deltaTime;
+				if (timeElapsed >= LENGTH) {
+					SceneController.Instance.isJustLaunched = false;
+					ShowMainMenu ();
+				}
 			}
+		} else {
+			ShowMainMenu ();
 		}
+	}
+
+	void ShowMainMenu () {
+		gameObject.SetActive (false);
+		mainMenu.SetActive (true);
 	}
 }

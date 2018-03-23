@@ -16,8 +16,24 @@ public class SceneController : MonoBehaviour {
 		}
 	}
 
+	private static bool created = false;
+
+	public bool isJustLaunched;
+
+	void Awake () {
+		if (!created) {
+			DontDestroyOnLoad (gameObject);
+			created = true;
+		}
+	}
+
+	void Start () {
+		isJustLaunched = true;
+	}
+
 	public void LoadScene (string sceneName) {
 		SceneManager.LoadScene (sceneName, LoadSceneMode.Single);
 	}
+		
 
 }
