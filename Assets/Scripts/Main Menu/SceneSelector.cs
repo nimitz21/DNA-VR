@@ -6,19 +6,8 @@ using UnityEngine.XR;
 
 public class SceneSelector : MonoBehaviour {
 
-	private const string DEFAULT_SCENE = "Circus";
-	private string currentSceneName;
-
-	void Start () {
-		currentSceneName = DEFAULT_SCENE;
-	}
-
-	public void LoadSelectedScene () {
-		SceneManager.LoadScene (currentSceneName, LoadSceneMode.Single);
-	}
-
-	public void SelectScene (string sceneName) {
-		currentSceneName = sceneName;
+	public void LoadScene (string sceneName) {
+		SceneManager.LoadScene (sceneName, LoadSceneMode.Single);
 	}
 
 }

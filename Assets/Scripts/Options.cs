@@ -25,6 +25,7 @@ public class Options : MonoBehaviour {
 	void Update () {
 		if (!canvas.activeInHierarchy) {
 			if (cameraTransform.eulerAngles.x >= ANGLE_THRESHOLD && willShow) {
+				transform.eulerAngles = Vector3.up * cameraTransform.eulerAngles.y;
 				canvas.SetActive (true);
 				willShow = false;
 			} else if (cameraTransform.eulerAngles.x < ANGLE_THRESHOLD) {
