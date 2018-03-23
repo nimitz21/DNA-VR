@@ -16,18 +16,8 @@ public class SceneController : MonoBehaviour {
 		}
 	}
 
-	[SerializeField]
-	private GameObject sceneSelect;
-	[SerializeField]
-	private GameObject prologue;
-
 	public void LoadScene (string sceneName) {
 		SceneManager.LoadScene (sceneName, LoadSceneMode.Single);
 	}
 
-	public void ShowPrologue () {
-		sceneSelect.SetActive (false);
-		prologue.SetActive (true);
-		prologue.GetComponent <Prologue> ().Open ();
-	}
 }
