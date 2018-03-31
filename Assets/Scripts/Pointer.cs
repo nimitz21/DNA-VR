@@ -80,4 +80,11 @@ public class Pointer : MonoBehaviour {
 			arrowTransform.gameObject.SetActive (true);
 		}
 	}
+
+	public void HideAllVrCanvas () {
+		foreach (VrCanvas vrCanvas in vrCanvases) {
+			vrCanvas.canvas.SetActive (false);
+		}
+	}
+		
 }

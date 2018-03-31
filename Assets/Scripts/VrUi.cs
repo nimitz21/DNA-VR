@@ -14,13 +14,6 @@ public class VrUi : MonoBehaviour {
 	[SerializeField]
 	private int prevObjectIndex;
 
-	private AudioSource audioSoruce;
-
-	void Start () {
-		audioSoruce = GetComponent <AudioSource> ();
-		audioSoruce.volume = PlayerPrefs.GetFloat (VolumeController.VOLUME_PREF_KEY);
-	}
-
 	public void Open () {
 		gameObject.SetActive (true);
 	}

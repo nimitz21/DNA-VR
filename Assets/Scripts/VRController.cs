@@ -5,6 +5,17 @@ using UnityEngine.XR;
 
 public class VRController : MonoBehaviour {
 
+	private static VRController instance;
+	public static VRController Instance {
+		get {
+			if (instance == null) {
+				instance = FindObjectOfType <VRController> ();
+			}
+			return instance;
+		}
+	}
+
+
 	private const string NO_VR_DEVICE_NAME = "none";
 	private const string VR_DEVICE_NAME = "cardboard";
 	private const string HOME_SCENE_NAME = "Home";
@@ -15,7 +26,7 @@ public class VRController : MonoBehaviour {
 		XRSettings.enabled = true;
 	}
 
-	IEnumerator BackToMainMenu () {
+	public IEnumerator BackToMainMenu () {
 		XRSettings.LoadDeviceByName (NO_VR_DEVICE_NAME);
 		yield return null;
 		XRSettings.enabled = false;
