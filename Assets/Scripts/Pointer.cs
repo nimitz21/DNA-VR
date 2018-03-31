@@ -19,7 +19,7 @@ public class Pointer : MonoBehaviour {
 	[System.Serializable]
 	public class VrCanvas {
 		public int index;
-		public GameObject canvas;
+		public VrUi canvas;
 	}
 
 	[SerializeField]
@@ -66,7 +66,7 @@ public class Pointer : MonoBehaviour {
 	public void Enter (int objectIndex) {
 		foreach (VrCanvas vrCanvas in vrCanvases) {
 			if (vrCanvas.index != objectIndex) {
-				vrCanvas.canvas.SetActive (false);
+				vrCanvas.canvas.Close ();
 			}
 		}
 		if (objectIndex == destinationIndex) {
@@ -83,7 +83,7 @@ public class Pointer : MonoBehaviour {
 
 	public void HideAllVrCanvas () {
 		foreach (VrCanvas vrCanvas in vrCanvases) {
-			vrCanvas.canvas.SetActive (false);
+			vrCanvas.canvas.Close ();
 		}
 	}
 		

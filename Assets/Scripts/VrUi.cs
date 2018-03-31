@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class VrUi : MonoBehaviour {
 
 	[SerializeField]
+	float HOTSPOT_EXPAND = 2f;
+	[SerializeField]
+	private Vector3 normalHotspotScale = new Vector3(0.1f, 0.1f, 1f);
+	[SerializeField]
 	private Transform nextObject;
 	[SerializeField]
 	private int nextObjectIndex;
@@ -26,9 +30,15 @@ public class VrUi : MonoBehaviour {
 	[SerializeField]
 	private Sprite hoverOffSprite;
 	[SerializeField]
+	private Transform hotspotSpriteTransform;
+	[SerializeField]
 	private ScrollText scrollText;
 
 	private AudioSource audioSource;
+
+	void Awake () {
+		normalHotspotScale = hotspotSpriteTransform.localScale;
+	}
 
 	void Start () {
 		audioSource = GetComponent <AudioSource> ();
@@ -36,12 +46,15 @@ public class VrUi : MonoBehaviour {
 
 	public void Open () {
 		gameObject.SetActive (true);
+		Debug.Log (normalHotspotScale);
+		hotspotSpriteTransform.localScale = normalHotspotScale * HOTSPOT_EXPAND;
 		if (scrollText != null) {
 			scrollText.Reset ();
 		}
 	}
 
 	public void Close () {
+		hotspotSpriteTransform.localScale = normalHotspotScale;
 		gameObject.SetActive (false);
 	}
 

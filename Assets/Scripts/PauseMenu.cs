@@ -22,6 +22,8 @@ public class PauseMenu : MonoBehaviour {
 	[SerializeField]
 	private float ROTATION = 20f;
 	[SerializeField]
+	private GvrPointerPhysicsRaycaster physicsRaycaster;
+	[SerializeField]
 	private List <SceneOption> scenes; 
 	[SerializeField]
 	private GameObject options;
@@ -52,6 +54,7 @@ public class PauseMenu : MonoBehaviour {
 		} else if (selectedScene == scenes.Count - SCENE_NUMBER_OFFSET) {
 			nextButton.SetActive (false);
 		}
+		pivot.GetChild (selectedScene).gameObject.SetActive (false);
 		UpdateSelectedScene ();
 	}
 
@@ -69,6 +72,7 @@ public class PauseMenu : MonoBehaviour {
 		gameObject.SetActive (true);
 		options.SetActive (false);
 		Pointer.Instance.HideAllVrCanvas ();
+		physicsRaycaster.eventMask -= 1;
 	}
 
 	public void NextScene () {
@@ -76,7 +80,9 @@ public class PauseMenu : MonoBehaviour {
 		if (selectedScene == 0) {
 			prevButton.SetActive (true);
 		}
+		pivot.GetChild (selectedScene).gameObject.SetActive (true);
 		++selectedScene;
+		pivot.GetChild (selectedScene).gameObject.SetActive (false);
 		if (selectedScene == scenes.Count - SCENE_NUMBER_OFFSET) {
 			nextButton.SetActive (false);
 		}
@@ -88,7 +94,9 @@ public class PauseMenu : MonoBehaviour {
 		if (selectedScene == scenes.Count - SCENE_NUMBER_OFFSET) {
 			nextButton.SetActive (true);
 		}
+		pivot.GetChild (selectedScene).gameObject.SetActive (true);
 		--selectedScene;
+		pivot.GetChild (selectedScene).gameObject.SetActive (false);
 		if (selectedScene == 0) {
 			prevButton.SetActive (false);
 		}
