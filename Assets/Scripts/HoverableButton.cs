@@ -33,6 +33,11 @@ public class HoverableButton : MonoBehaviour {
 		trigger.triggers.Add (pointerExitEntry);
 	}
 
+	public void Unhover () {
+		image.sprite = normalSprite;
+		image.SetNativeSize ();
+	}
+
 	public void Hover (PointerEventData data) {
 		image.sprite = hoverSprite;
 		image.SetNativeSize ();
@@ -43,7 +48,7 @@ public class HoverableButton : MonoBehaviour {
 		image.SetNativeSize ();
 	}
 
-	public void setNormalSprite (Sprite sprite) {
+	public void SetNormalSprite (Sprite sprite) {
 		normalSprite = sprite;
 	}
 

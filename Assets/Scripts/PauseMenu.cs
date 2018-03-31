@@ -59,7 +59,7 @@ public class PauseMenu : MonoBehaviour {
 		selectedSceneTitle.text = scenes [selectedScene].title;
 		selectedSceneImage.sprite = scenes [selectedScene].normalSprite;
 		selectedSceneImage.SetNativeSize ();
-		selectedSceneHoverButton.setNormalSprite (scenes [selectedScene].normalSprite);
+		selectedSceneHoverButton.SetNormalSprite (scenes [selectedScene].normalSprite);
 		selectedSceneHoverButton.SetHoverSprite (scenes [selectedScene].hoverSprite);
 		selectedSceneSubtitle.text = scenes [selectedScene].subtitle;
 		selectedScenePage.sprite = scenes [selectedScene].pageSprite;
