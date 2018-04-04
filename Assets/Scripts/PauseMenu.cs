@@ -38,8 +38,6 @@ public class PauseMenu : MonoBehaviour {
 	[SerializeField]
 	private Image selectedSceneImage;
 	[SerializeField]
-	private HoverableButton selectedSceneHoverButton;
-	[SerializeField]
 	private Text selectedSceneSubtitle;
 	[SerializeField]
 	private Image selectedScenePage;
@@ -61,9 +59,6 @@ public class PauseMenu : MonoBehaviour {
 	void UpdateSelectedScene () {
 		selectedSceneTitle.text = scenes [selectedScene].title;
 		selectedSceneImage.sprite = scenes [selectedScene].normalSprite;
-		selectedSceneImage.SetNativeSize ();
-		selectedSceneHoverButton.SetNormalSprite (scenes [selectedScene].normalSprite);
-		selectedSceneHoverButton.SetHoverSprite (scenes [selectedScene].hoverSprite);
 		selectedSceneSubtitle.text = scenes [selectedScene].subtitle;
 		selectedScenePage.sprite = scenes [selectedScene].pageSprite;
 	}
