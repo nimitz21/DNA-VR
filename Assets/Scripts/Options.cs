@@ -52,5 +52,9 @@ public class Options : MonoBehaviour {
 	public void StopTimer () {
 		isTimerRunning = false;
 	}
+
+	public void LoadScene (string sceneName) {
+		SceneController.Instance.LoadScene (sceneName);
+	}
 		
 }

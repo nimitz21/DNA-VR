@@ -21,9 +21,11 @@ public class VRController : MonoBehaviour {
 	private const string HOME_SCENE_NAME = "Home";
 
 	IEnumerator Start () {
-		XRSettings.LoadDeviceByName (VR_DEVICE_NAME);
-		yield return null;
-		XRSettings.enabled = true;
+		if (!XRSettings.enabled) {
+			XRSettings.LoadDeviceByName (VR_DEVICE_NAME);
+			yield return null;
+			XRSettings.enabled = true;
+		}
 	}
 
 	public IEnumerator BackToMainMenu () {
