@@ -15,7 +15,7 @@ public class ScrollText : MonoBehaviour {
 	private float scrollPercentage;
 
 	void Start () {
-		scrollPercentage =  1 / (Mathf.Ceil(contentTransform.rect.height / viewportTransform.rect.height) - 1);
+		scrollPercentage = 1 / (contentTransform.rect.height / viewportTransform.rect.height - 1);
 	}
 
 	public void ScrollDown () {
@@ -23,7 +23,6 @@ public class ScrollText : MonoBehaviour {
 	}
 
 	public void Reset () {
-		Debug.Log (UnityEngine.StackTraceUtility.ExtractStackTrace ());
 		scrollbar.value = 1f;
 	}
 

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class HoverableButton : MonoBehaviour {
+public class HoverableButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
 
 	[SerializeField]
 	private Sprite hoverSprite;
@@ -15,30 +15,19 @@ public class HoverableButton : MonoBehaviour {
 	void Start () {
 		image = GetComponent <Image> ();
 		normalSprite = image.sprite;
-
-		EventTrigger trigger = gameObject.AddComponent <EventTrigger> ();
-
-		EventTrigger.Entry pointerEnterEntry = new EventTrigger.Entry ();
-		pointerEnterEntry.eventID = EventTriggerType.PointerEnter;
-		pointerEnterEntry.callback.AddListener ((data) => {
-			Hover ((PointerEventData)data);
-		});
-		trigger.triggers.Add (pointerEnterEntry);
-
-		EventTrigger.Entry pointerExitEntry = new EventTrigger.Entry ();
-		pointerExitEntry.eventID = EventTriggerType.PointerExit;
-		pointerExitEntry.callback.AddListener ((data) => {
-			Unhover ((PointerEventData)data);
-		});
-		trigger.triggers.Add (pointerExitEntry);
 	}
 
-	public void Hover (PointerEventData data) {
+	public void OnPointerEnter (PointerEventData eventData) {
 		image.sprite = hoverSprite;
 		image.SetNativeSize ();
 	}
 
-	public void Unhover (PointerEventData data) {
+	public void OnPointerExit (PointerEventData eventData) {
+		image.sprite = normalSprite;
+		image.SetNativeSize ();
+	}
+
+	public void OnPointerClick (PointerEventData eventData) {
 		image.sprite = normalSprite;
 		image.SetNativeSize ();
 	}

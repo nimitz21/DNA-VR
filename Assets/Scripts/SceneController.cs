@@ -24,6 +24,8 @@ public class SceneController : MonoBehaviour {
 		if (!created) {
 			DontDestroyOnLoad (gameObject);
 			created = true;
+		} else {
+			DestroyObject (gameObject);
 		}
 	}
 

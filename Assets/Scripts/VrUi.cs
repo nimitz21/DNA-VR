@@ -46,7 +46,6 @@ public class VrUi : MonoBehaviour {
 
 	public void Open () {
 		gameObject.SetActive (true);
-		Debug.Log (normalHotspotScale);
 		hotspotSpriteTransform.localScale = normalHotspotScale * HOTSPOT_EXPAND;
 		if (scrollText != null) {
 			scrollText.Reset ();
