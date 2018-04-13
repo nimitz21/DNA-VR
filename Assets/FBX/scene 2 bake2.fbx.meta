@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 64f0e431bdd389a47b54855dcd8aa66d
-timeCreated: 1523597556
+guid: bc0e2cb4ec0aac8429e32f03ae018c49
+timeCreated: 1523601574
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,63 +9,59 @@ ModelImporter:
     100002: 1curve_big_tv_1
     100004: Camera
     100006: Disc
-    100008: edge
-    100010: edge_2
-    100012: edge_light
-    100014: edge_light_1
-    100016: edge_light_2
-    100018: edge_light_3
-    100020: Light
-    100022: Light_1
-    100024: Light_2
-    100026: Light_3
-    100028: Light_3_2
-    100030: //RootNode
-    100032: sphere_1
+    100008: edge_light
+    100010: edge_light_2
+    100012: edge_light_2_2
+    100014: edge_light_3
+    100016: Light
+    100018: Light_1
+    100020: Light_2
+    100022: Light_3
+    100024: Light_3_2
+    100026: //RootNode
+    100028: sphere_1
     400000: 1curve_big_tv
     400002: 1curve_big_tv_1
     400004: Camera
     400006: Disc
-    400008: edge
-    400010: edge_2
-    400012: edge_light
-    400014: edge_light_1
-    400016: edge_light_2
-    400018: edge_light_3
-    400020: Light
-    400022: Light_1
-    400024: Light_2
-    400026: Light_3
-    400028: Light_3_2
-    400030: //RootNode
-    400032: sphere_1
+    400008: edge_light
+    400010: edge_light_2
+    400012: edge_light_2_2
+    400014: edge_light_3
+    400016: Light
+    400018: Light_1
+    400020: Light_2
+    400022: Light_3
+    400024: Light_3_2
+    400026: //RootNode
+    400028: sphere_1
     2000000: Camera
     2100000: transparency
     2100002: No Name
-    2100004: Mat.5
+    2100004: sphere
     2100006: Disc
     2100008: 1curve big tv
     2100010: 1curve big tv.1
     2300000: 1curve_big_tv
     2300002: 1curve_big_tv_1
     2300004: Disc
-    2300006: edge
-    2300008: edge_2
-    2300010: edge_light
+    2300006: edge_light
+    2300008: edge_light_2
+    2300010: edge_light_2_2
     2300012: edge_light_3
     2300014: sphere_1
     3300000: 1curve_big_tv
     3300002: 1curve_big_tv_1
     3300004: Disc
-    3300006: edge
-    3300008: edge_2
-    3300010: edge_light
+    3300006: edge_light
+    3300008: edge_light_2
+    3300010: edge_light_2_2
     3300012: edge_light_3
     3300014: sphere_1
-    4300000: edge
+    4300000: edge_light_3
     4300002: edge_light
-    4300004: edge_2
-    4300006: edge_light_3
+    4300004: edge_light_2
+    4300006: edge_light_2_2
     4300008: sphere_1
     4300010: Disc
     4300012: 1curve_big_tv_1
@@ -78,70 +74,40 @@ ModelImporter:
     10800008: Light_3_2
   externalObjects:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 1curve big tv
-    second: {fileID: 2100000, guid: f2ad2802e626e3244af7ab7375a29034, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 1curve big tv.1
-    second: {fileID: 2100000, guid: db3b8406d2ece95429ed9e9750d82e62, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Disc
-    second: {fileID: 2100000, guid: a7d7c7e115eb23745ae060fd51580ce8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mat.5
-    second: {fileID: 2100000, guid: e4de806dc8787b447821ceee9b1b736c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 543f7c1e8bea7264397adf6dd15173d2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: transparency
-    second: {fileID: 2100000, guid: ae8f7ddc916823846b3d0e8480e050f1, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: 1
-    second: {fileID: 2800000, guid: 6c9e2d135bb2e4d43a492aa1281cc419, type: 3}
-  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 1curve_big_tv.1Surface_Color
-    second: {fileID: 2800000, guid: e7cbe85c1c25c724a9db54c381a8c1c3, type: 3}
+    second: {fileID: 2800000, guid: 5ff92503c2f170a41939ba83485b9b7a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 1curve_big_tvSurface_Color
-    second: {fileID: 2800000, guid: 9464be5f68d25464abcdc85ed1d75622, type: 3}
+    second: {fileID: 2800000, guid: d30a6a91f50b40549b7b7a18da603b33, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DiscSurface_Color
-    second: {fileID: 2800000, guid: 695b54ec5e3bea84db0e87205586f919, type: 3}
+    second: {fileID: 2800000, guid: 48a53029e72d35d4d93f12878ba43907, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: bg sphere test3
-    second: {fileID: 2800000, guid: 2b20da62760edb84dac4b281bbc0509f, type: 3}
+    second: {fileID: 2800000, guid: 4e65de05ffa8d0048b9750fed9c32f85, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: sphere dna test1
-    second: {fileID: 2800000, guid: d2e154c067f343c4785beff1b001c7fe, type: 3}
+    second: {fileID: 2800000, guid: 85fce32d29338cb40a6dc54c587eb8dd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sphere.1Surface_Color
+    second: {fileID: 2800000, guid: 49c0cb27c14d1b642bf77764d8694f5b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: test2
-    second: {fileID: 2800000, guid: c883397eae6a9e943a57c5f854ec8c3d, type: 3}
+    second: {fileID: 2800000, guid: 97f876bca79cd6248ac91b85c69458a7, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

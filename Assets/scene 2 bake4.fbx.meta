@@ -1,51 +1,77 @@
 fileFormatVersion: 2
-guid: 8b5164a19e033274c99e7eed040289a8
-timeCreated: 1521820708
+guid: b3520dcc20b92b441a24a6798bd88466
+timeCreated: 1523602520
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: 1
-    100002: CINEMA_4D_Editor
-    100004: Fracture
-    100006: Polygon
-    100008: Polygon_2
-    100010: Polygon_3
-    100012: Polygon_4
-    100014: Polygon_5
-    100016: Polygon_6
-    100018: //RootNode
-    400000: 1
-    400002: CINEMA_4D_Editor
-    400004: Fracture
-    400006: Polygon
-    400008: Polygon_2
-    400010: Polygon_3
-    400012: Polygon_4
-    400014: Polygon_5
-    400016: Polygon_6
-    400018: //RootNode
-    2000000: CINEMA_4D_Editor
-    2100000: Mat
-    2300000: Polygon
-    2300002: Polygon_2
-    2300004: Polygon_3
-    2300006: Polygon_4
-    2300008: Polygon_5
-    2300010: Polygon_6
-    3300000: Polygon
-    3300002: Polygon_2
-    3300004: Polygon_3
-    3300006: Polygon_4
-    3300008: Polygon_5
-    3300010: Polygon_6
-    4300000: Polygon
-    4300002: Polygon_2
-    4300004: Polygon_3
-    4300006: Polygon_4
-    4300008: Polygon_5
-    4300010: Polygon_6
+    100000: 1curve_big_tv
+    100002: 1curve_big_tv_1
+    100004: Camera
+    100006: Disc
+    100008: edge_light
+    100010: edge_light_2
+    100012: edge_light_2_2
+    100014: edge_light_3
+    100016: Light
+    100018: Light_1
+    100020: Light_2
+    100022: Light_3
+    100024: Light_3_2
+    100026: //RootNode
+    100028: sphere_1
+    400000: 1curve_big_tv
+    400002: 1curve_big_tv_1
+    400004: Camera
+    400006: Disc
+    400008: edge_light
+    400010: edge_light_2
+    400012: edge_light_2_2
+    400014: edge_light_3
+    400016: Light
+    400018: Light_1
+    400020: Light_2
+    400022: Light_3
+    400024: Light_3_2
+    400026: //RootNode
+    400028: sphere_1
+    2000000: Camera
+    2100000: No Name
+    2100002: transparency
+    2100004: sphere
+    2100006: Disc
+    2100008: 1curve big tv
+    2100010: 1curve big tv.1
+    2300000: 1curve_big_tv
+    2300002: 1curve_big_tv_1
+    2300004: Disc
+    2300006: edge_light
+    2300008: edge_light_2
+    2300010: edge_light_2_2
+    2300012: edge_light_3
+    2300014: sphere_1
+    3300000: 1curve_big_tv
+    3300002: 1curve_big_tv_1
+    3300004: Disc
+    3300006: edge_light
+    3300008: edge_light_2
+    3300010: edge_light_2_2
+    3300012: edge_light_3
+    3300014: sphere_1
+    4300000: edge_light
+    4300002: edge_light_3
+    4300004: edge_light_2
+    4300006: edge_light_2_2
+    4300008: sphere_1
+    4300010: Disc
+    4300012: 1curve_big_tv_1
+    4300014: 1curve_big_tv
     9500000: //RootNode
+    10800000: Light
+    10800002: Light_1
+    10800004: Light_2
+    10800006: Light_3
+    10800008: Light_3_2
   externalObjects: {}
   materials:
     importMaterials: 1
