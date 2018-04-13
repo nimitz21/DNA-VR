@@ -3337,7 +3337,132 @@ ModelImporter:
     10800066: Light_7
     10800068: Light_8
     10800070: Light_9
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Digital-1
+    second: {fileID: 2800000, guid: a2c256e842325bd44aaa4ebdadbaae17, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screen Shot 2018-03-16 at 16.06.54
+    second: {fileID: 2800000, guid: c37f04b6c9b35c0449d03d7ab1acfe3e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screen Shot 2018-03-16 at 16.19.21
+    second: {fileID: 2800000, guid: 9f52ca91fb16435489fb081a55d33b10, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screen Shot 2018-03-16 at 16.21.50
+    second: {fileID: 2800000, guid: 26a860d0e79c16547b33ccf5000bfa9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screen Shot 2018-03-16 at 16.24.27
+    second: {fileID: 2800000, guid: 65935f20a5fe95f40b48e0105cfde8e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screen Shot 2018-03-16 at 16.25.03
+    second: {fileID: 2800000, guid: ea9931a156e461d48b57a1a820974bfd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screen Shot 2018-03-16 at 16.25.39
+    second: {fileID: 2800000, guid: 0efcbed98ceadb5489bf9845a9e77db1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screen Shot 2018-03-16 at 16.27.22
+    second: {fileID: 2800000, guid: 0cb4e3e15ce127d41a15a41105056329, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: blood text
+    second: {fileID: 2800000, guid: f759ac7ec93d08c4099728d64e4e3a46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buletan1-02
+    second: {fileID: 2800000, guid: 20d420997f7be804c94685186e7dfe25, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dirt text
+    second: {fileID: 2800000, guid: bb82d5c7da69ff945a3d745f5c6a36f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: epiderm
+    second: {fileID: 2800000, guid: c82e5617bb2d91a4cb2d4e5453247607, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: grey
+    second: {fileID: 2800000, guid: 5de7871d4bd74d14088ee0a5d9739b28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: half pattern tent new-01
+    second: {fileID: 2800000, guid: 9f700c4d89ec049499e233736d6de5b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: information bulet
+    second: {fileID: 2800000, guid: 7575a6ae51092c846979f96a95a899aa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kayu panjang
+    second: {fileID: 2800000, guid: 95c0f83071f0f1844bb3d0d0a8363c5c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pattern loop-03
+    second: {fileID: 2800000, guid: 14d9d7851db9d5046bfd88a4bfbcfd47, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pattern tenda lurus-02
+    second: {fileID: 2800000, guid: 9de813cfeb33da443ab7c9f238cc2031, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: purple
+    second: {fileID: 2800000, guid: d21b5fd6cfb09134188b5a0bd97126d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: red
+    second: {fileID: 2800000, guid: 5de5c3b324c82a34ab8fbe4b889c301d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rumput
+    second: {fileID: 2800000, guid: 79f74b015b58ede4b883f728d2e3508a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: target pattern with blood light
+    second: {fileID: 2800000, guid: 4c0f7641166fd544bb12cf3b0e46cef4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tiang
+    second: {fileID: 2800000, guid: d216b493e0cfd4145ae24037df77469a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tirai merah
+    second: {fileID: 2800000, guid: 7258327b0da733741929b4590b4e8f3b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood-texture_1083-21
+    second: {fileID: 2800000, guid: 09161d2f0962eff47a02fa860abf3c97, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

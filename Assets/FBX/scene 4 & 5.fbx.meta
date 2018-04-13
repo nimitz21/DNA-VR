@@ -13959,7 +13959,122 @@ ModelImporter:
     10800022: Light_2_8
     10800024: Light_2_9
     10800026: Light_3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: blood0000
+    second: {fileID: 2800000, guid: e36cd7d6673cc974cbb4baa44d6bb7d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: board panjang
+    second: {fileID: 2800000, guid: 65d652da16ce41d4294ef3ce978613a1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bukti rambut0000
+    second: {fileID: 2800000, guid: 8baaa0daff703794d9bc55b8ded660b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: circus c0000
+    second: {fileID: 2800000, guid: 7a77b443bb3e36e49863077239520ac3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: curtain copy
+    second: {fileID: 2800000, guid: 01aa8689cac735c4994d2250df3a37de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dead pelatih sirkus0000
+    second: {fileID: 2800000, guid: d8bb9f9e0cd8d914892f9d0961e02fc6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dna sequence rainbow-01
+    second: {fileID: 2800000, guid: 6c4097cd8d13f8242a6a431a9680fc6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gender test1
+    second: {fileID: 2800000, guid: 720f5e1a2cea6dc45a3147ad79ac6857, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: isi komp
+    second: {fileID: 2800000, guid: b61c64d6c42a0e447a3e51b9dec78429, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: karakter sirkus 1h_1
+    second: {fileID: 2800000, guid: de1511d68c8188d469cb2fd15069a3b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: luka dada0000
+    second: {fileID: 2800000, guid: 15204c132456740429a36d747fe66f9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: luka2_0000
+    second: {fileID: 2800000, guid: 5000e170e46389b45bf7e45b31577038, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: muka pelatih
+    second: {fileID: 2800000, guid: ef87ccb5d18012547996396d0ab7d86d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pasang kromosom test1
+    second: {fileID: 2800000, guid: 8051292e9156c5541a24da8cb0bfe9f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sign sirkus0000
+    second: {fileID: 2800000, guid: 51d73a0593000cf4a9f6f07aeb0851fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tandatanya
+    second: {fileID: 2800000, guid: 0a9dd08da8f4f264a8e46a6ed720f692, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tecan1
+    second: {fileID: 2800000, guid: 7fbb0957395512247b1808e8cfc47c88, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tecan2
+    second: {fileID: 2800000, guid: 02aa12ad7610a9c4988259ed936fcdbb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tersangka1
+    second: {fileID: 2800000, guid: 7e8b5310c9a66be4387aad009702fe94, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tersangka2
+    second: {fileID: 2800000, guid: 05d790eaf58fd474e93826a9699f4865, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tersangka3
+    second: {fileID: 2800000, guid: ce5e38ab7c446334382f02045d53ede4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wajah korban_i2_0000
+    second: {fileID: 2800000, guid: 720e122ac242a624391c7e75f6b4b4dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wallother_texture_09-1024x683
+    second: {fileID: 2800000, guid: 57ceda1aef8ea894998a64eebd1ece7e, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

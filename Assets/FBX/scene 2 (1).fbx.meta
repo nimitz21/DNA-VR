@@ -93,7 +93,27 @@ ModelImporter:
     10800004: Light_2
     10800006: Light_3
     10800008: Light_3_2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1
+    second: {fileID: 2800000, guid: 906c8c5cc0c6dee4b88a0d52a5a3c441, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bg sphere test3
+    second: {fileID: 2800000, guid: 8b497a91fd5d28244a56014e3cd82a2b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sphere dna test1
+    second: {fileID: 2800000, guid: e47dbdbb3797f3147a9bb34df1a19539, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: test2
+    second: {fileID: 2800000, guid: aeaa29f0e44dd4a4fa5823c88e659c01, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
